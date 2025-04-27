@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Photo & Video Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>My Photography & Videography</h1>
+    <p>Capturing moments from today... Creating memories for a lifetime.</p>
+  </header>
+
+  <main class="gallery">
+    <!-- Images -->
+    <a href="images/photo1.jpg" class="glightbox" data-gallery="gallery">
+      <img src="images/photo1.jpg" alt="Photo 1">
+    </a>
+
+    <a href="images/photo2.jpg" class="glightbox" data-gallery="gallery">
+      <img src="images/photo2.jpg" alt="Photo 2">
+    </a>
+
+    <a href="images/photo3.jpg" class="glightbox" data-gallery="gallery">
+      <img src="images/photo3.jpg" alt="Photo 3">
+    </a>
+
+    <!-- Local MP4 video -->
+    <a href="videos/vid1.mp4" class="glightbox" data-gallery="gallery" data-type="video">
+      <video muted autoplay loop playsinline>
+        <source src="videos/vid1.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </a>
+
+  </main>
+
+  <footer>
+    <p>© 2025 My Photography & Videography</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
+</body>
+</html>
